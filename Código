@@ -1,13 +1,19 @@
-int main()
-    int x
+#include <stdio.h>
+
+int main() {
+    int n = 8;  
     int a = 0, b = 1;
-    printf("La sucesión de de Fibonacci es":);
-    printf("\n%d", a");
-    printf("\n%d", b");
-    while (b < x++) {
+
+    printf("La sucesión de Fibonacci es:");
+    printf("\n%d", a);
+    printf("\n%d", b);
+
+    for (int i = 2; i < n; i++) {  
         int y = a + b;
-        a = b + 1;
-        b = y - 1;
         printf("\n%d", y);
+        a = b;
+        b = y;
     }
+
+    return 0;
 }
